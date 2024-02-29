@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
     <nav class="navbar">
       <div class="navbar-container container">
           <input type="checkbox" name="" id="">
@@ -29,6 +30,7 @@
               <li><a href="#food-menu">Menu</a></li>
               <li><a href="#testimonials">Testimonial</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#" id="cart-icon">Cart <span id="cart-count">0</span></a></li>
           </ul>
           <h1 class="logo">RS</h1>
       </div>
@@ -280,9 +282,24 @@
         </div>
       </div>
     </section>
+  </main>
+  <div id="cart" class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+    <button id="checkout">Checkout</button>
+</div>
+
+<footer>
+    <p>&copy; 2022 Simple E-commerce. All rights reserved.</p>
+</footer>
+
     <footer id="footer">
       <h2>Restraunt &copy; all rights reserved</h2>
     </footer>
+    <script src="script.js"></script>
   </body>
   <!-- 
     .................../ JS Code for smooth scrolling /...................... -->
